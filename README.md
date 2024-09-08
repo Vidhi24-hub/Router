@@ -1,6 +1,6 @@
 # Router 1x3
 
-This project implements a Router 1x3, a device that forwards data packets between computer networks based on the packet's destination address. The router operates at Layer 3 (Network Layer) of the OSI model, and drives packets to one of three output channels based on the address field in the packet header.
+This project implements a Router 1x3, a device that forwards data packets between computer networks based on the packet's destination address. The router operates at Layer 3 (Network Layer) of the OSI model, and drives packets to one of three output channels based on the address field in the packet header. 
 
 **Overview**
 
