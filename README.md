@@ -5,6 +5,7 @@ This project implements a Router 1x3, a device that forwards data packets betwee
 The Router 1x3 follows a packet-based protocol, handling data packets from multiple networks. It receives network packets from a source LAN byte by byte on the active positive edge of the clock.
 
 
+
 **Key Operation**
 
 **Packet Reception** : The start of a new packet is indicated by asserting pkt_valid, and the end is marked by deasserting pkt_valid. The router stores incoming packets in a FIFO corresponding to the destination LAN based on the address in the packet header.
@@ -16,6 +17,7 @@ The Router 1x3 follows a packet-based protocol, handling data packets from multi
 **Error Detection (Parity Check)** : The router employs a parity check mechanism to ensure data integrity. If there is a mismatch between the parity byte sent by the source LAN and the parity calculated by the router, an error signal is asserted. This error signal prompts the source LAN to resend the packet.
 
 **Simultaneous Operations** : The router can only receive one packet at a time, it can read up to three packets simultaneously, ensuring efficient processing and transmission across multiple networks.
+
 
 
 **Key Features**
