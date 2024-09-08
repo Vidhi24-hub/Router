@@ -4,6 +4,7 @@ This project implements a Router 1x3, a device that forwards data packets betwee
 
 The Router 1x3 follows a packet-based protocol, handling data packets from multiple networks. It receives network packets from a source LAN byte by byte on the active positive edge of the clock.
 
+
 **Key Operation**
 
 **Packet Reception** : The start of a new packet is indicated by asserting pkt_valid, and the end is marked by deasserting pkt_valid. The router stores incoming packets in a FIFO corresponding to the destination LAN based on the address in the packet header.
