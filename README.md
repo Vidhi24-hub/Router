@@ -2,7 +2,7 @@
 
 This project implements a Router 1x3, a device that forwards data packets between computer networks based on the packet's destination address. The router operates at Layer 3 (Network Layer) of the OSI model, and drives packets to one of three output channels based on the address field in the packet header. 
 
-**Overview**
+# Overview
 
 The Router 1x3 follows a packet-based protocol, handling data packets from multiple networks. It receives network packets from a source LAN byte by byte on the active positive edge of the clock.
 
@@ -10,7 +10,7 @@ The start of a new packet is indicated by asserting **pkt_valid**, and the end i
 
 
 
-**Key Features**
+# Key Features
 
 **Sending and Receiving Packet** : The router is capable of handling both packet transmission and reception simultaneously, ensuring smooth data flow between networks.
 
